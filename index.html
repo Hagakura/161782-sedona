@@ -7,7 +7,7 @@
 	<body>
 		<div class="container">
 			<header class="main_header"> <!-- Блок: Крыша -->
-				<nav class="main_navigator">
+				<nav class="main_navigation">
 					<ul>
 						<li><a href="#">Информация</a></li>
 						<li><a href="#">Фото и Видео</a></li>
@@ -28,7 +28,7 @@
 				
 				<div class="content_block"> <!-- Блок: h2 заголовок -->  
 					<h2 class="content_title">Седона- небольшой городок в Аризоне, заслуживающий большего!</h2> 
-					<div class="features_text">Рассмотрим 5 причин по которым Седона круче, чем Гранд Каньон!</div>
+					<div class="content_text">Рассмотрим 5 причин по которым Седона круче, чем Гранд Каньон!</div>
 				</div>
 
 				<div class="content_block"> <!--  Блок: Причина №1 и картинка -->  
@@ -86,15 +86,15 @@
 
 				<div class="content_block"> <!-- Блок: Заинтересовались? -->
 					<h2 class="content_title">Заинтересовались?</h2>
-					<div class="features_text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
-					</div>
+					<p class="content_text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+					<input type="button" value="Найти"></input>
 				</div>
 
-				<div class="content_block"> <!-- Блок: карта -->
+				<div class="sedona_map"> <!-- Блок: карта -->
 					<div class="map">#background map</div> <!--  background в css! -->
 				</div>
 			</main>
-			<footer class="content_block"> <!-- Подвал -->
+			<footer class="main_footer"> <!-- Подвал -->
 				<div class="tag">
 					#visitsedona
 				</div>
@@ -104,14 +104,19 @@
 					<a class="social_btn social_btn_youtube" href="#">youtube</a>
 				</div>
 				<div class="copyright">
-					<span>website by</span>
-					<div class="icon_htmlacademy">HtmlAcademy</div>
+					website by
+					<a class="icon_htmlacademy"><img src="htmlacademy.ru" alt="#HtmlAcademy"></a>
+					</div>
 				</div>
 			</footer>
 
-			<div class="popup"> <!-- pop up дата заезда --> 
-				
-			</div>
+			<form class="form_search_hotels"> <!-- pop up дата заезда --> 
+				<label for="in">Дата заезда: <input id="in" placeholder="ДД.ММ.ГГГГ" type="text"></label>
+				<label for="out">Дата выезда: <input id="out" placeholder="ДД.ММ.ГГГГ" type="text"></label>
+				<label for="adults">Взрослые: <input id="adults" type="text"></label>
+				<label for="children">Дети: <input id="children" type="text"></label>
+				<input type="button" value="Найти">
+			</form>
 		</div><!-- container div -->
 	</body>
 </html>
