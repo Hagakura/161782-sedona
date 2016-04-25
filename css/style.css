@@ -1,19 +1,19 @@
 body {
-	font-family: PTsans;
-	font-weight: Regular;
+	font-family: "PTsans", Arial,sans-serif;
+	font-weight: 400;
 	font-size: 14px;
 	color: #333333;
 	line-height: 21px;
 }
 h2 {
-	font-family: PTsans;
+	font-family: "PTsans", Arial,sans-serif;
 	font-weight: bold;
 	font-size: 30px;
 	color: #000000;
 	line-height: 24px;
 }
 h3 {
-	font-family: PTsans;
+	font-family: "PTsans", Arial,sans-serif;
 	font-weight: bold;
 	font-size: 21px;
 	color: #000000;
