@@ -1,14 +1,29 @@
 html, body {
+	text-transform:uppercase;
+	padding:0;
 	margin:0;
-	padding:0
+}
+ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+.clearfix::after {
+	clear: both;
+	display: table;
+	content: "";
 }
 
+ul {
+	list-style-type:none;
+}
 body {
 	font-family: "PTsans", Arial,sans-serif;
 	font-weight: 400;
-	font-size: 14px;
-	color: #333333;
 	line-height: 21px;
+	color: #333333;
+	font-size: 14px;
+	background-color: #f2f2f2;
 }
 
 h2 {
@@ -28,43 +43,89 @@ h3 {
 }
 
 .container {
-	/*background-color: lightcyan;*/
-	outline: 2px solid black;
 	width: 1200px;
 	margin: 0px 40px;
+	background-color: white;
 }
 
 .main_header {
-	background-color: gray;
-	outline: 2px solid blue;
+	background: rgba(234, 255, 45, 0.2);
+	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 	width: auto;
-	height: 56px;
-	margin-top: -15px;
-}
 
+}
 .main_navigation {
 }
 
-li {
+.main_navigation li {
 	display: inline-block;
 	vertical-align: top;
+	min-height: 56px;
 }
-
+.logo {
+	float: left;
+	margin-left: 309px;
+}
 .intro {
-	background-color: yellow;
-	outline: 2px solid black;
-	height: 724px;
+	min-height: 724px;
+	background-image: url("../img/intro.jpg");
 }
-
+.zigzag {
+	background-color: white;
+}
 .content_block {
-	outline: 2px solid black;
-	height: 256px;
+	min-height:256px;
+	background-color: white;
+	outline: 1px solid black;
 }
 
 .features_text {
-	float: left;
-	border: 1px solid black;
 	background-color: #81b3d2;
 	width: 400px;
-	height: 256px;
+	min-height: 256px;
+	text-align: center;
+	float: left;
+}
+
+.block1 {
+	margin-top: -276px
+}
+
+.features_picture {
+	float:right;
+	background-image: url(../img/town.jpg);
+	width: 800px;
+	min-height: 256px;
+}
+
+.content_about {
+	float:left;
+	min-height: 256px;
+	width: 400px;
+
+}
+.content_about:last-child {
+	float:right;
+}
+
+.features_picture:nth-child(1) {
+	float:left;
+	background-image: url(../img/canyon.jpg);
+	width: 800px;
+	min-height: 256px;
+}
+
+
+footer {
+
+}
+
+.tag {
+	float:left;
+}
+.footer_social {
+	float:left;
+}
+.copyright {
+	float:right;
 }
