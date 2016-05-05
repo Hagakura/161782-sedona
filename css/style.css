@@ -15,10 +15,11 @@ html, body {
 	margin:0;
 	padding: 0;
 }
+
 .clearfix::after {
+	content: "";
 	display: table;
 	clear: both;
-	content: "";
 }
 .content_block h2 {
 	padding: 0px;
@@ -37,7 +38,6 @@ html, body {
 	margin: 0px;
 
 }
-
 .container {
 	width: 1200px;
 	margin: 0px 40px;
@@ -46,36 +46,40 @@ html, body {
 
 .main_header {
 	background: rgba(234, 255, 45, 0.2);
-	box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-	width: auto;
 
 }
 .main_navigation {
-	position: relative;
+	list-style:none;
+	margin:0;
+	padding: 0px;
 }
 
 .main_navigation li {
-	display: inline-block;
-	vertical-align: top;
-	min-height: 56px;
+	float:left;
+	/*background:#ccf;*/
+	width: 238px;
+	padding-top: 21px;
 }
-.logo {
-	position: absolute;
-	margin-left: 309px;
-	z-index: 3;
+
+#logo {
+	padding: 0px;
 }
+.main_navigation li:last-child {
+	float: right;
+}
+
 .intro {
 	height: 510px;
 	background-image: url("../img/intro.jpg");
-
+	margin-top: -15px;
 }
 .zigzag {
 	background-color: white;
 }
 .content_block {
-	min-height:256px;
-	background-color: white;
 	outline:1px solid black;
+	background-color:white;
+	text-align:center;
 }
 .content_title {
 	padding-top: 50px;
@@ -93,11 +97,7 @@ html, body {
 	float: left;
 }
 
-.block1 {
-	width: 1200px;
-	text-align:center;
-	bottom: 114px;
-	min-height: 200px; 
+.block1 { 
 }
 
 .features_picture {
@@ -125,9 +125,7 @@ html, body {
 	min-height: 256px;
 }
 
-.block6 {
-	margin-left: 443px;
-	margin-top: 132px; 
+.block6 { 
 }
 .btn_find {
 	height: 58px; 
