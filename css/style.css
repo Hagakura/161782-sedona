@@ -51,7 +51,7 @@ html, body {
 .main_navigation {
 	list-style:none;
 	margin:0;
-	padding: 0px;
+	/*padding: 0px;*/
 }
 
 .main_navigation ul {
@@ -61,16 +61,18 @@ html, body {
 	float:left;
 	/*background:#ccf;*/
 	width: 238px;
-	padding-top:21px;
+	/*padding-top:21px;*/
 }
 
-#logo {
-	padding: 0px;
+.main_navigation  {
+	padding-top: 20px;
 }
-.main_navigation li:nth-child(4) {
+
+.main_navigation li:last-child {
 	float: right;
 }
-.main_navigation li:last-child {
+
+.main_navigation li:nth-child(4) {
 	float: right;
 }
 
@@ -301,6 +303,7 @@ form ul {
 	padding-bottom: 30px;
 }
 .hotel_about {
+	outline: 1px solid cyan;
 	float:left;
 	width: 365px;
 	padding-left: 30px;
@@ -343,4 +346,8 @@ form ul {
 	margin-bottom: 30px;
 }
 
-
+.hotel_card_info {
+	float:left;
+	padding: 0px;
+	margin: 0px;
+}
