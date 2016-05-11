@@ -1,14 +1,13 @@
-
 html, body {
-	font-family: "PTsans", Arial,sans-serif;
-	font-weight: 400;
 	padding: 0;
 	margin: 0;
-	line-height: 21px;
-	color: #333333;
 	font-size: 14px;
-	background-color: #f2f2f2;
-	text-transform: uppercase;}
+	font-weight: 400;
+	line-height: 21px;
+	font-family: "PTsans", Arial,sans-serif;
+	color: #333333;
+	text-transform: uppercase;
+	background-color: #f2f2f2;}
 
 .main_navigation ul {
 	list-style: none;
@@ -32,10 +31,10 @@ html, body {
 
 .content_block h3 {
 	font-weight: bold;
-	font-size: 21px;
 	color: #000000;
-	line-height: 21px;
 	margin: 0px;
+	font-size: 21px;
+	line-height: 21px;;;
 
 }
 .container {
@@ -45,26 +44,29 @@ html, body {
 }
 /*главное меню*/
 .main_header {
-	background: rgba(234, 255, 45, 0.2);
 }
 
 .main_navigation ul {
 	position: relative;
-	list-style:none;
 	margin:0;
 	padding: 0px;
+	list-style: none;
 }
+
 .logo {
-	position: absolute;
 	margin-top: -20px;
+	position: absolute;
+	display: block;
+	padding-left: 51px;
 }
 
 .main_navigation li {
 	width: 240px;
-	float:left;
+	padding-bottom: 15px;
+	min-height: 21px;
+	float: left;
+	text-align: center;
 	padding-top: 20px;
-	margin-bottom: 18px;
-
 
 }
 
@@ -86,13 +88,14 @@ html, body {
 	background-color: white;
 }
 .content_block {
+	text-align:center;
 	outline:1px solid black;
 	background-color:white;
-	text-align:center;
 }
 .content_title {
 	padding-top: 50px;
-	padding-bottom: 20px; 
+	padding-bottom: 20px;
+	color: #FFF; 
 }
 .content_text {
 	margin-top: 30px;
@@ -100,42 +103,66 @@ html, body {
 }
 .features_text {
 	background-color: #81b3d2;
+	color: #FFFFFF;
 	width: 400px;
 	min-height: 256px;
 	text-align: center;
 	float: left;
 }
 
-.block1 { 
-}
-
 .features_picture {
 	float:right;
-	background-image: url(../img/town.jpg);
 	width: 800px;
 	min-height: 256px;
+	background-image:url(../img/town.jpg);
 }
 
 .content_about {
+	position:relative;
+	width:400px;
+	min-height:256px;
 	float:left;
-	min-height: 256px;
-	width: 400px;
 
 }
-.content_about:last-child {
-	float:right;
+.content_about .title_about {
+	padding-top: 160px;
+	margin-bottom: 25px;
+
+}
+.icon {
+	position: absolute;
+	padding: 5px;
+	width: 80px;
+	top: 50px;
+	left: 160px;
+	height: 80px;
+	background-color: #FFF;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.icon_house {
+	background-image: url(../img/icon_house.svg);
+
+}
+.icon.icon_food {
+	background-image: url(../img/icon_food.svg);
+}
+.icon.icon_present {
 	background-image: url(../img/icon_present.svg);
 }
+
 
 .features_picture:nth-child(1) {
 	float:left;
 	background-image: url(../img/canyon.jpg);
 	width: 800px;
 	min-height: 256px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
 }
 
-.block6 { 
-}
+
 .btn_find {
 	height: 58px; 
 	width: 458px;
@@ -158,6 +185,7 @@ footer {
 	margin-left: 90px;
 	padding-top: 36px;
 	padding-bottom: 36px;
+	text-align: center;
 	outline:1px solid cyan;
 }
 
@@ -253,10 +281,10 @@ form ul {
 
 .sort_panel ul {
 	list-style: none;
-	padding-bottom: 30px;
+	margin: 0px;
 	padding: 0px;
 	padding-top: 30px;
-	margin: 0px;
+	padding-bottom: 30px;
 }
 .sort_panel li {
 	display: inline-block;
@@ -276,6 +304,7 @@ form ul {
 	float: left;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	width: 128px;
 }
 
 .sort_params {
@@ -316,14 +345,15 @@ form ul {
 	float: left;
 	margin-bottom: 8px;
 	padding-top: 30px;
-	margin-right: 40px;
+	margin-right: 74px;
 
 }
 .hotel_card p {
 	float: left;
 	outline: 1px solid cyan;
-	padding: 5px 10px;
-	margin-right: 30px;
+	width: 110px;
+	/*padding: 5px 10px;*/
+	margin-right: 27px;
 }
 .hotel_about a {
 	float:left;
@@ -345,4 +375,11 @@ form ul {
 	outline: 1px solid cyan;
 	margin-top:90px;
 	margin-bottom: 30px;
+}
+
+.main_navigation a {
+	font-size: 14px;
+	line-height: 26px;
+	text-decoration: none;
+	text-transform: uppercase;
 }
