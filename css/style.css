@@ -1,13 +1,14 @@
 html, body {
-	padding: 0;
-	margin: 0;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 21px;
-	font-family: "PTsans", Arial,sans-serif;
 	color: #333333;
 	text-transform: uppercase;
-	background-color: #f2f2f2;}
+	padding: 0;
+	margin: 0px;
+	font-weight: 400;
+	background-color: #f2f2f2;
+	font-size: 14px;
+	line-height: 21px;
+	font-family: "PT sans", Arial,sans-serif;
+}
 
 .main_navigation ul {
 	list-style: none;
@@ -29,19 +30,22 @@ html, body {
 	font-size: 30px;
 }
 .content_block h3{
-	margin: 0;
 	padding: 0;
+	margin: 0;
 }
 .content_block .content_title {
 	font-weight: bold;
 	font-size: 21px;
-	line-height: 26px;
+	padding-top: 60px;
 	color: #000000;
-	padding-top: 62px;
+	margin-bottom: 31px;
+	line-height: 26px;
 }
 .features_text .content_title {
 	line-height: 21px;
 	color: inherit;
+	padding-top: 55px;
+	margin-bottom: 25px;
 }
 .features_text.other_color{
 	background-color: #81b3d2;
@@ -56,8 +60,6 @@ html, body {
 	background-color: white;
 }
 /*главное меню*/
-.main_header {
-}
 
 .main_navigation ul {
 	position: relative;
@@ -67,18 +69,21 @@ html, body {
 }
 
 .logo {
-	margin-top: -20px;
+	margin-top: -15px;
 	position: absolute;
 	display: block;
-	padding-left: 51px;
+	padding-left: 55px;
+	padding-right: 0px;
 }
 
 .main_navigation li {
-	width: 240px;
-	padding-bottom: 10px;
 	float: left;
+	padding-top: 14px;
+	padding-bottom: 17px;
+	padding-right: 0px;
+	min-width: 240px;
 	text-align: center;
-	padding-top: 20px;
+	outline: 1px solid yellow;
 }
 
 .main_navigation li:last-child {
@@ -89,57 +94,55 @@ html, body {
 	float: right;
 }
 .main_navigation a {
+	font-size: 14px;
 	line-height: 26px;
 	text-decoration: none;
 	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.main_navigation a:visited {
+	line-height: 26px;
 	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
 	font-weight: bold;
 
 }
-.main_navigation a:visited {
-	line-height: 26px;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 14px;
-	color: black;
-}
-
 
 .intro {
 	height: 507px;
-	background-image: url("../img/intro3.jpg");
-	background-position: 0 95%;
+	background-image: url("../img/intro.jpg");
+	background-position: -2px 95%;
 	background-repeat: no-repeat;
 }
-.zigzag {
-	background-color: white;
-}
 .content_block {
-	text-align:center;
 	background-color:white;
+	text-align:center;
 }
-.blue_block {
-	background-color: #81b3d2;
-	color: #FFFFFF;
-}
+
 .content_title {
-	padding-top: 50px;
 	padding-bottom: 20px;
-	color: #FFF; 
+	color: #FFF;
+	padding-top: 50px; 
 }
 .content_text {
 	margin-bottom: 52px;
-	padding-top: 32px;
 }
 .features_text {
 	width: 400px;
-	min-height: 256px;
 	text-align: center;
 	float: left;
 	color: #000000;
 	background-color: #FFFFFF;
+	min-height: 256px;
 }
-
+.content_block p {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 21px;
+}
 .features_picture {
 	float:right;
 	width: 800px;
@@ -154,13 +157,17 @@ html, body {
 	float:left;
 }
 .content_about .title_about {
-	padding-top: 160px;
-	margin-bottom: 25px;
+	padding-top: 162px;
+	margin-bottom: 22px;
 	font-size: 21px;
 }
-.content_about>p {
-	padding-top: 30px
-	margin-bottom: 61px;
+.content_about p {
+	margin: 0;
+	padding: 0;
+}
+.content_about p {
+	margin-bottom: 80px;
+	padding-top: 0px;
 }
 
 .icon {
@@ -170,20 +177,22 @@ html, body {
 	top: 50px;
 	left: 160px;
 	height: 80px;
+	background-position: 2px 11px;
 	background-color: #FFF;
 	background-repeat: no-repeat;
-	background-position: 0 0;
 }
 
 .icon_house {
-	background-image: url(../img/icon_house.svg);
+	background-image: url("../img/icon_house.png");
 
 }
 .icon.icon_food {
-	background-image: url(../img/icon_food.svg);
+	background-image: url("../img/icon_food.png");
+	background-position: 3px 12px;
 }
 .icon.icon_present {
-	background-image: url(../img/icon_present.svg);
+	background-image: url("../img/icon_present.png");
+	background-position: 7px 7px;
 }
 
 
@@ -242,35 +251,49 @@ footer {
 	outline: 1px solid cyan;
 }
 /*Поп-ап форма */
+.map_block {
+
+}
+.content_block .map_title {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 24px;
+	margin-bottom: 32px;
+}
+.content_block .map_text {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 52px;
+}
+.form_search_hotels {
+	float:left;
+	outline: 1px solid cyan;
+	height: 395px;
+	width: 568px;
+	margin-left: 316px;
+}
 .form_search_hotels .form_title {
+	display: block;
 	background-color: #766357;
-	min-height: 85px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	margin-bottom: 55px;
 }
 
-.form_search_hotels {
-	width: 570px;
-	height: 395px;
-	outline: 1px solid cyan;
-}
-.form_search_hotels {
-	width: 570px;
-	outline: 1px solid cyan;
-}
-.form_search_hotels label:nth-child(3) {
-	width: 200px;
-	outline: 1px solid cyan;
-}
 
 /*Страница отели*/
 .main_hotel {
-	font-family:"PTsans", Arial,sans-serif;
+	font-family:"PT sans", Arial,sans-serif;
 	font-weight:400;
 	margin:0;
 	font-size: 14px;
 	padding:0;
 }
 form.filters {
-	font-family:"PTsans", Arial,sans-serif;
+	font-family:"PT sans", Arial,sans-serif;
 	font-weight:400;
 	padding:0;
 	margin:0;
@@ -411,3 +434,6 @@ form ul {
 	margin-bottom: 30px;
 }
 
+.container {
+	padding: 0 0px;
+}
