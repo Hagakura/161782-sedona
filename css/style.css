@@ -105,7 +105,6 @@ html, body {
 	font-size: 14px;
 	line-height: 26px;
 	text-decoration: none;
-	text-transform: uppercase;
 	font-weight: bold;
 }
 
@@ -228,25 +227,27 @@ html, body {
 }
 
 footer {
-	min-height: 56px;
+	min-height: 120px;
 }
 
 .tag {
 	float:left;
-	width: 240px;
-	margin-left: 70px;
-	padding-top: 40px;
 	padding-bottom: 40px;
-	outline: 1px solid cyan;
+	padding-top:50px;
+	padding-left: 61px;
+	margin-left:70px;
+	width:240px;
+	font-size:21px;
+	font-weight:bold;
+	line-height:26px;
 }
 .footer_social {
 	float: left;
 	width: 400px;
-	margin-left: 90px;
-	padding-top: 36px;
+	margin-left: 26px;
+	padding-top: 42px;
 	padding-bottom: 36px;
 	text-align: center;
-	outline:1px solid cyan;
 }
 
 .social_btn {
@@ -260,12 +261,20 @@ footer {
 }
 
 .copyright {
+	position: relative;
 	float:right;
 	width: 240px;
-	margin-right: 70px;
-	padding-top: 40px;
+	margin-right: 58px;
+	padding-top: 52px;
 	padding-bottom: 40px;
-	outline: 1px solid cyan;
+}
+
+.icon_htmlacademy {
+	width: 113px;
+	height: 39px;
+	position: absolute;
+	top: 44px;
+	left: 82px;
 }
 /*Поп-ап форма */
 .map_block {
@@ -290,7 +299,6 @@ footer {
 
 .form_search_hotels {
 	float:left;
-	outline: 1px solid cyan;
 	height: 395px;
 	width: 568px;
 	margin-left: 316px;
@@ -338,6 +346,7 @@ form ul {
 	font-weight: bold;
 	line-height: 21px;
 	padding: 0;
+	color: #FFFFFF;
 }
 
 .filters li {
@@ -346,6 +355,7 @@ form ul {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 21px;
+	color: #FFFFFF;
 	
 }
 .input-group {
@@ -354,18 +364,15 @@ form ul {
 	padding-bottom: 30px;
 	float: left;
 	width: 240px;
-	outline: 1px solid cyan;
 }
 
 .input-group:nth-child(2) {
-	outline: 1px solid cyan;
 	width: 241px;
 	margin-left: 0px;
 }
 
 .block_cost {
 	float:right;
-	outline: 1px solid cyan;
 	width:330px;
 	margin-right: 70px;
 	padding-bottom:35px;
@@ -374,8 +381,8 @@ form ul {
 }
 
 .sort_panel {
-	outline: 1px solid cyan;
 	min-height: 82px;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .sort_panel ul {
@@ -396,7 +403,6 @@ form ul {
 
 .found_results {
 	float: left;
-	outline: 1px solid cyan;
 	margin-left: 70px;
 	padding-top: 29px;
 	padding-right: 54px;
@@ -412,19 +418,16 @@ form ul {
 	padding-top: 32px;
 	padding-bottom: 32px;
 	width: 78px;
-	outline: 1px solid cyan;
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: 400;
 }
 
 .sort_params {
-	outline: 1px solid cyan;
 	float: left;
 }
 
 .sort_up {
-	outline: 1px solid cyan;
 	float:right;
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -432,8 +435,8 @@ form ul {
 }
 
 .hotel_card {
-	outline: 1px solid cyan;
 	min-height: 150px;
+	border-bottom: 1px solid #e5e5e5;
 }
 .hotel_card h2 {
 	padding: 0;
@@ -444,7 +447,6 @@ form ul {
 	padding: 0;
 	margin-top: 0;
 	float: left;
-	outline: 1px solid cyan;
 	min-width: 110px;
 	font-size: 14px;
 	font-weight: 400;
@@ -461,7 +463,6 @@ form ul {
 }
 
 .hotel_about {
-	outline: 1px solid cyan;
 	float:left;
 	width: 380px;
 	padding: 0px;
@@ -474,7 +475,7 @@ form ul {
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
-	padding-top: 27px;
+	padding-top: 25px;
 	padding-left:1px;
 	margin-right: 76px;
 	margin-bottom: 5px;
@@ -501,6 +502,8 @@ form ul {
 	padding-left: 17px;
 	padding-bottom: 3px;
 	margin-bottom: 30px;
+	color:#FFFFFF;
+	text-decoration: none;
 }
 .hotel_details {
 	background-color: #81b3d2;
@@ -515,7 +518,6 @@ form ul {
 
 .hotel_stars {
 	float:right;
-	outline: 1px solid cyan;
 	margin-top: 26px;
 	font-size: 22px;
 	line-height: 21px;
@@ -528,7 +530,6 @@ form ul {
 	padding-left: 5px;
 	padding-right: 5px;
 	margin-right: 12px;
-	outline:1px solid cyan;
 }
 
 .container {
