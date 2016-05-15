@@ -26,7 +26,6 @@
 					<h3 class="content_title">Седона &mdash; небольшой городок в Аризоне,<br>заслуживающий большего!</h3>
 					<div class="content_text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</div>
 				</div>
-
 				<div class="content_block clearfix"> <!--  Блок: Причина №1 и картинка -->
 					<div class="features_text other_color"> 
 						<h3 class="content_title" >Настоящий<br> городок</h3>
@@ -36,7 +35,6 @@
 					<div class="features_picture"> <!--  background в css! -->
 					</div>
 				</div>
-
 				<div class="content_block clearfix"> <!-- Блок: Жилье Еда Сувениры -->
 					<div class="content_about"> 
 						<div class="icon icon_house"></div>
@@ -54,7 +52,6 @@
 						<p>Не только китайского, но и местного<br> производства!</p>
 					</div>
 				</div>
-
 				<div class="content_block">  <!--  Блок: Причина №2 и картинка -->
 					<div class="features_picture"> <!-- background в css! -->
 					</div> 
@@ -64,7 +61,6 @@
 						<p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
 					</div>
 				</div>
-
 				<div class="content_block clearfix"> <!--  Блок: Причина №3,4,5 и картинка -->
 					<div class="features_text color_background">
 						<h3 class="content_title" >Небольшая<br> площадь</h3>
@@ -82,25 +78,23 @@
 						<p>Большинство едет в Гранд Каньон и<br> толпиться там</p>
 					</div>
 				</div>
-
 				<div class="content_block map_block clearfix"> <!-- Блок: Заинтересовались? -->
 					<h2 class="content_title map_title">Заинтересовались?</h2>
 					<p class="content_text map_text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 					
 					<form class="form_search_hotels clearfix"> <!-- pop up дата заезда --> 
 						<div class="content_title form_title clearfix">Поиск гостиницы в Седоне</div>
-							<ul>
-							<li><label for="in">Дата заезда: <input id="in" placeholder="ДД.ММ.ГГГГ" type="text"></label></li>
-							<li><label for="out">Дата выезда: <input id="out" placeholder="ДД.ММ.ГГГГ" type="text"></label></li>
-							<li><label for="adults">Взрослые: <input id="adults" type="text"></label></li>
-							<li><label for="children">Дети: <input id="children" type="text"></label></li>
-							</ul>
-							<input type="button" value="Найти">
-							
+						<div class="form_params">
+							<label for="in" class="field_title_in">Дата заезда: <input class="field_date_in" id="in" placeholder="   24 Апреля 2016" type="text"></label>
+							<label for="out" class="field_title_out">Дата выезда: <input class="field_date_out" id="out" placeholder="ДД.ММ.ГГГГ"type="text"></label>
+							<label class="field_title_adults" for="adults">Взрослые: <input id="adults" type="text"></label>
+							<label class="field_title_children" for="children">Дети: <input id="children" type="text"></label>
+							<input class="btn_search" type="button" value="Найти">
+						</div>
 					</form>
 				</div>
 				<div class="sedona_map"> <!-- Блок: карта -->
-					<div class="map">#background map</div> <!--  background в css! -->
+					<div class="map"></div> <!--  background в css! -->
 				</div>
 			</main>
 			<footer class="main_footer clearfix"> <!-- Подвал -->
@@ -114,12 +108,10 @@
 				</div>
 				<div class="copyright">
 					website by
-					<a class="icon_htmlacademy"><img src="img/co_academy.png" alt="#HtmlAcademy"></a>
+					<a class="icon_htmlacademy"><!-- <img src="img/co_academy.png" alt="#HtmlAcademy"> --></a>
 					</div>
 				</div>
 			</footer>
-
-
-		</div>container div
-	</body>
+		</div>
+</body>
 </html>

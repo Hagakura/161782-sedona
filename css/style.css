@@ -1,13 +1,13 @@
 html, body {
-	color: #333333;
 	text-transform: uppercase;
 	padding: 0;
 	margin: 0px;
 	font-weight: 400;
-	background-color: #f2f2f2;
 	font-size: 14px;
 	line-height: 21px;
 	font-family: "PT sans", Arial,sans-serif;
+	color: #333333;
+	background-color: #f2f2f2;
 }
 
 .main_navigation ul {
@@ -125,8 +125,7 @@ html, body {
 }
 
 .content_block {
-	background-color:white;
-	text-align:center;
+	text-align: center;
 }
 
 .content_title {
@@ -270,15 +269,22 @@ footer {
 }
 
 .icon_htmlacademy {
+	display:block;
 	width: 113px;
 	height: 39px;
 	position: absolute;
 	top: 44px;
 	left: 82px;
+	background-image: url(../img/co_academy.png);
+	background-repeat: no-repeat;
+}
+.icon_htmlacademy:hover {
+	background-image: url(../img/co_academy_hover.png);
+	background-repeat: no-repeat;
 }
 /*Поп-ап форма */
 .map_block {
-
+	position: relative;
 }
 
 .content_block .map_title {
@@ -294,24 +300,73 @@ footer {
 	font-weight: 400;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 42px;
+	margin-bottom: 130px;
 }
 
 .form_search_hotels {
-	float:left;
-	height: 395px;
+	position: absolute;
+	background-image: white;
 	width: 568px;
-	margin-left: 316px;
+	height: 482px;
+	left: 316px;
+	background-color: white;
+	top: 207px;
 }
 
 .form_search_hotels .form_title {
 	display: block;
 	background-color: #766357;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	margin-bottom: 55px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 53px;
+	color: white;
+}
+.form_search_hotels .form_params {
+	position: relative;
+	min-height: 342px;
+	width: 458px;
+	margin-left: 55px;
+	margin-right: 55px;
+}
+.form_search_hotels .field_date_in {
+	width: 342px;
+	height: 33px;
+	position: absolute;
+	top: -10px;
+	left: 113px;
+}
+.form_search_hotels .field_date_out {
+	width: 342px;
+	height: 32px;
+	position: absolute;
+	top: -7px;;
+	left: 113px;
 }
 
+.field_title_in {
+	position: absolute;
+	top: 13px;
+	left: 0px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 26px;
+}
+.field_title_out {
+	position: absolute;
+	left: 0px;
+	top: 78px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 26px;
+}
+
+.map {
+	width: auto;
+	height: 472px;
+	background-image: url(../img/sedona_map.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
 
 /*Страница отели*/
 .main_hotel {
