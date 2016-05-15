@@ -287,6 +287,9 @@ footer {
 	position: relative;
 }
 
+input[type="text" i] {
+    padding:0 ;
+}
 .content_block .map_title {
 	font-size: 30px;
 	font-weight: bold;
@@ -305,8 +308,7 @@ footer {
 
 .form_search_hotels {
 	position: absolute;
-	background-image: white;
-	width: 568px;
+	width: 570px;
 	height: 482px;
 	left: 316px;
 	background-color: white;
@@ -318,7 +320,7 @@ footer {
 	background-color: #766357;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	margin-bottom: 53px;
+	margin-bottom: 56px;
 	color: white;
 }
 .form_search_hotels .form_params {
@@ -328,36 +330,71 @@ footer {
 	margin-left: 55px;
 	margin-right: 55px;
 }
+
+.form_params label {
+	float: left;
+	line-height: 26px;
+	font-weight: bold;
+	font-size: 14px;;;;
+}
+
+.form_params input {
+	width: 115px;
+	background-color: #f2f2f2;
+	height: 30px;
+	margin-left: 33px;;;;
+}
+
 .form_search_hotels .field_date_in {
 	width: 342px;
 	height: 33px;
-	position: absolute;
-	top: -10px;
-	left: 113px;
+	margin-left: 16px;
+
 }
 .form_search_hotels .field_date_out {
 	width: 342px;
 	height: 32px;
-	position: absolute;
-	top: -7px;;
-	left: 113px;
+	margin-left: 16px;
+	background-color: #f2f2f2;
 }
 
 .field_title_in {
-	position: absolute;
-	top: 13px;
-	left: 0px;
-	font-size: 14px;
-	font-weight: bold;
-	line-height: 26px;
+	margin-bottom: 32px;
+	float: left;
+	margin-left: 1px;
 }
+
 .field_title_out {
-	position: absolute;
-	left: 0px;
-	top: 78px;
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 26px;
+	float: left;
+	margin-left: -3px;
+	margin-bottom: 35px;
+}
+
+.field_title_adults {
+}
+.form_params .field_title_children {
+	float: right;
+}
+
+.form_params .field_number_chld {
+	margin-left: 19px;
+}
+
+.form_params .btn_search {
+	margin-top: 52px;
+	width: 459px;
+	margin-left: 0px;
+	height: 61px;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+	color: #FFFFFF;
+	background-color: #81b3d2;
+	text-transform: uppercase;
+	font-family: "PT sans", Arial,sans-serif;
 }
 
 .map {
