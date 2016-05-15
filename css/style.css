@@ -9,6 +9,46 @@ html, body {
 	color: #333333;
 	background-color: #f2f2f2;
 }
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+
+	font-family: "symbols-sedona";
+	src: url("../fonts/symbols-sedona.woff") format("woff"),
+		url("../fonts/symbols-sedona.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+  text-decoration: inherit;
+}
+
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-calendar::before { content: "\e800"; } /* "" */
+.icon-plus::before { content: "\e801"; } /* "" */
+.icon-minus::before { content: "\e802"; } /* "" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
+
 
 .main_navigation ul {
 	list-style: none;
@@ -63,7 +103,7 @@ html, body {
 
 .container {
 	width: 1200px;
-	margin: 0px 40px;
+	margin: 0px auto;
 	background-color: white;
 }
 
@@ -89,8 +129,8 @@ html, body {
 	padding-top: 14px;
 	padding-bottom: 17px;
 	padding-right: 0px;
-	min-width: 240px;
 	text-align: center;
+	min-width: 240px;
 }
 
 .main_navigation li:last-child {
@@ -244,20 +284,24 @@ footer {
 	float: left;
 	width: 400px;
 	margin-left: 26px;
-	padding-top: 42px;
+	padding-top: 38px;
 	padding-bottom: 36px;
 	text-align: center;
 }
 
 .social_btn {
 	display: inline-block;
-	width: 43px;
-	height: 43px;
-	margin: 0 2px;
-	vertical-align: top;
+	width: 45px;
+	height: 35px;
+	margin: 0px 2px;
+	background: #81b3d2;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 19px;
 	text-decoration: none;
-	background: #000000;
+	padding-top: 13px;
 }
+
 
 .copyright {
 	position: relative;
@@ -287,9 +331,6 @@ footer {
 	position: relative;
 }
 
-input[type="text" i] {
-    padding:0 ;
-}
 .content_block .map_title {
 	font-size: 30px;
 	font-weight: bold;
@@ -335,14 +376,14 @@ input[type="text" i] {
 	float: left;
 	line-height: 26px;
 	font-weight: bold;
-	font-size: 14px;;;;
+	font-size: 14px;
 }
 
 .form_params input {
 	width: 115px;
 	background-color: #f2f2f2;
 	height: 30px;
-	margin-left: 33px;;;;
+	margin-left: 33px;
 }
 
 .form_search_hotels .field_date_in {
@@ -423,13 +464,11 @@ form.filters {
 	font-size:16px;
 	font-weight:400;
 	font-family:"PT sans", Arial,sans-serif;
-
 }
-
 form ul {
-	list-style: none;
 	margin:0;
 	padding:0;
+	list-style:none;
 }
 
 .filters h2 {
@@ -459,7 +498,7 @@ form ul {
 }
 
 .input-group:nth-child(2) {
-	width: 241px;
+	width: 240px;
 	margin-left: 0px;
 }
 
@@ -524,6 +563,10 @@ form ul {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	margin-right: 70px;
+	font-size: 23px;
+	line-height: 20px;
+	font-weight: 400px;
+	color: #cccccc;
 }
 
 .hotel_card {
@@ -587,7 +630,6 @@ form ul {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: bold;
-	outline: 1px solid cyan;
 	margin-right:4px;
 	padding-top: 3px;
 	padding-right: 17px;
@@ -624,6 +666,28 @@ form ul {
 	margin-right: 12px;
 }
 
-.container {
-	padding: 0 0px;
+input[type="checkbox"] {
+	display: none;
+}
+
+
+input[type="checkbox"] + label; {
+	padding-left: 45px;
+	display: block;
+	margin: 10px 0;
+	line-height: 20px;
+	position: relative;
+	cursor: pointer;
+}
+
+input[type="checkbox"] + label::before; {
+	content: "\2610";
+	position: absolute;
+	font-family: "symbols-sedona";
+	font-size: 25px;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background: #000;
 }
