@@ -24,39 +24,42 @@
 					<div class="input-group clearfix"> <!-- Инфраструктура -->
 						<h2 class="form_title">Инфраструктура</h2>
 						<ul>
-							<li><input type="checkbox" name="pool" id="pool"> <label for="pool" >Бассейн</label></li>
+							<li><input type="checkbox" name="pool" id="pool" checked> <label for="pool">Бассейн</label></li>
 							<li><input type="checkbox" name="parking" id="parking"> <label for="parking">Парковка</label></li>
 							<li><input type="checkbox" name="wi_fi" id="wi_fi"> <label for="wi_fi">wi-fi</label> </li>
 						</ul>
 					</div>
-
 					<div class="input-group clearfix"> <!-- Тип жилья -->
 						<h2 class="form_title">Тип жилья</h2>
 						<ul>
-							<li><input type="checkbox" name="hotel" id="hotel"> <label for="hotel" >Гостиница</label></li>
-							<li><input type="checkbox" name="motel" id="motel"> <label for="motel">Мотель</label></li>
-							<li><input type="checkbox" name="apartments" id="apartments"> <label for="apartments">Апартаменты</label></li>
+							<li><input type="checkbox" name="hotel" id="hotel" checked> <label for="hotel" >Гостиница</label></li>
+							<li><input type="checkbox" name="motel" id="motel" checked> <label for="motel">Мотель</label></li>
+							<li><input type="checkbox" name="apartments" id="apartments" checked> <label for="apartments">Апартаменты</label></li>
 						</ul>
 					</div>
-
-					<div class="block_cost"> <!-- Стоимость. Отправка формы. -->
-						<h2 class="form_title">Стоимость в сутки (Р):</h2>
-						<label for="field_from" ></label>
-						<input id="field_from" type="text" name="field_from"  value="От 0">
-						<label for="field_to" ></label>
-						<input id="field_to" type="text" name="to" value="До 3000">
-						<input type="range" min="0" max="5000" step="1" value="">
-						<input type="button" value="Показать">
+					<div class="filter-range"> <!-- Стоимость. Отправка формы. -->
+						<div class="filter-range-title">Стоимость в сутки (р):</div>
+						<div class="price-controls">
+							<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+							<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+						</div>
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar"></div>
+							</div>
+							<div class="range-toggle range-toggle-min"></div>
+							<div class="range-toggle range-toggle-max"></div>
+						</div>
+						<button class="btn-transparent" type="submit">Показать</button>
 					</div>
 				</form>
-				
 				<div class="search_results"> <!-- Блок: Карточки жилья и параметры поиска -->
 					<div class="sort_panel clearfix">
 						<div class="found_results">Найдено:<span>3</span> <!-- Возмонжо просто ссылка? -->
 						</div> 
 						<div class="sort_label">Сортировка:</div>
 						<ul class="sort_params">
-							<li><a href="#">По цене</a></li>
+							<li><a class="sort_active" href="#">По цене</a></li>
 							<li><a href="#">По типу</a></li>
 							<li><a href="#">По рейтингу</a></li>
 						</ul>
@@ -75,7 +78,7 @@
 							<a class="hotel_booking" href="#">Забронировать</a>
 						</div>
 						<div class="hotel_rate">
-							<div class="hotel_stars">★ ★ ★ ★</div> <!-- думаю тут будет css -->
+							<div class="hotel_stars">★ ★ ★ ★</div>
 							<div class="hotel_mark">Рейтинг:8,5</div>
 						</div>
 					</article>
