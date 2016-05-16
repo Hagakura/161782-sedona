@@ -377,7 +377,10 @@ footer {
 
 .form_params_show {
 	display: block;
+	animation: bounce 0.6s;
 }
+
+
 
 .form_params label {
 	float: left;
