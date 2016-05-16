@@ -20,19 +20,19 @@ html, body {
 
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
-  display: inline-block;
+	display: inline-block;
 
-  font-weight: normal;
+	font-weight: normal;
 
-  speak: none;
-  text-decoration: inherit;
-  width: 1em;
-  font-style: normal;
-  font-variant: normal;
-  font-family: "symbols-sedona";
-  text-align: center;
-  text-transform: none;
-  line-height: 24px;
+	speak: none;
+	text-decoration: inherit;
+	width: 1em;
+	font-style: normal;
+	font-variant: normal;
+	font-family: "symbols-sedona";
+	text-align: center;
+	text-transform: none;
+	line-height: 24px;
 }
 
 .icon-facebook::before { content: "\66"; } /* "f" */
@@ -103,6 +103,7 @@ html, body {
 	margin: 0px auto;
 	padding: 0 0;
 	background-color: white;
+	box-shadow: 0 0 5px 0 #34495e
 }
 
 /*главное меню*/
@@ -144,6 +145,7 @@ html, body {
 	line-height: 26px;
 	text-decoration: none;
 	font-weight: bold;
+	color: #000000;;
 }
 
 .main_navigation a:visited {
@@ -151,8 +153,8 @@ html, body {
 	font-size: 14px;
 	text-decoration: none;
 	text-transform: uppercase;
-	color: black;
 	font-weight: bold;
+	color: #000000;
 }
 
 .intro {
@@ -377,7 +379,8 @@ footer {
 
 .form_params_show {
 	display: block;
-	animation: bounce 0.6s;
+	-webkit-animation: bounce 0.7s; 
+	animation: bounce 0.7s;
 }
 
 
@@ -851,4 +854,41 @@ input[type="checkbox"]:checked + label::before {
 	color: #000000;
 
 	background: #ffffff;
+}
+@-webkit-keyframes bounce { 
+0% { 
+-webkit-transform: translateX(-2000px); 
+transform: translateX(-2000px); 
+} 
+70% { 
+-webkit-transform: translateX(30px); 
+transform: translateX(30px); 
+} 
+90% { 
+-webkit-transform: translateX(-10px); 
+transform: translateX(-10px); 
+} 
+100% { 
+-webkit-transform: translateX(0); 
+transform: translateX(0); 
+} 
+} 
+
+@keyframes bounce { 
+0% { 
+-webkit-transform: translateX(-2000px); 
+transform: translateX(-2000px); 
+} 
+70% { 
+-webkit-transform: translateX(30px); 
+transform: translateX(30px); 
+} 
+90% { 
+-webkit-transform: translateX(-10px); 
+transform: translateX(-10px); 
+} 
+100% { 
+-webkit-transform: translateX(0); 
+transform: translateX(0); 
+} 
 }
