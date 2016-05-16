@@ -451,7 +451,13 @@ footer {
 	font-family: "PT sans", Arial,sans-serif;
 	margin-bottom: 56px;
 }
-
+.map {
+	width: auto;
+	height: 472px;
+	background-image: url(../img/sedona_map.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
 .calendar_in {
 	position: absolute;
 	top: 60px;
@@ -492,13 +498,6 @@ footer {
 	color: #c2c2c2;
 }
 
-.map {
-	width: auto;
-	height: 472px;
-	background-image: url(../img/sedona_map.jpg);
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
 
 /*Страница отели*/
 .main_hotel {
