@@ -1,5 +1,4 @@
 html, body {
-	text-transform: uppercase;
 	padding: 0;
 	margin: 0px;
 	font-weight: 400;
@@ -8,6 +7,7 @@ html, body {
 	font-family: "PT sans", Arial,sans-serif;
 	background-color: #f2f2f2;
 	color: #000000;
+	text-transform: uppercase;
 }
 @font-face {
 	font-weight: normal;
@@ -79,7 +79,6 @@ html, body {
 	font-size: 21px;
 	padding-top: 60px;
 	color: #000000;
-	margin-bottom: 31px;
 	line-height: 26px;
 }
 
@@ -101,6 +100,7 @@ html, body {
 
 .container {
 	width: 1200px;
+	margin: 0px auto;
 	padding: 0 0;
 	background-color: white;
 }
@@ -348,26 +348,35 @@ footer {
 .form_search_hotels {
 	position: absolute;
 	width: 570px;
-	height: 482px;
 	left: 316px;
 	background-color: white;
 	top: 207px;
 }
 
 .form_search_hotels .form_title {
-	display: block;
 	background-color: #766357;
+	color: white;
+	display: block;
+	text-decoration: none;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	margin-bottom: 56px;
-	color: white;
 }
-.form_search_hotels .form_params {
+.form_title a {
+	padding: 0;
+	color: inherit;
+	text-decoration: inherit; 
+}
+.form_params {
 	position: relative;
 	min-height: 342px;
 	width: 458px;
 	margin-left: 55px;
 	margin-right: 55px;
+	display: none;
+}
+
+.form_params_show {
+	display: block;
 }
 
 .form_params label {
@@ -382,6 +391,7 @@ footer {
 	background-color: #f2f2f2;
 	height: 30px;
 	margin-left: 33px;
+	border: none;
 }
 
 .form_search_hotels .field_date_in {
@@ -401,6 +411,7 @@ footer {
 	margin-bottom: 32px;
 	float: left;
 	margin-left: 1px;
+	margin-top: 56px;
 }
 
 .field_title_out {
@@ -434,6 +445,7 @@ footer {
 	background-color: #81b3d2;
 	text-transform: uppercase;
 	font-family: "PT sans", Arial,sans-serif;
+	margin-bottom: 56px;
 }
 
 .map {
@@ -555,7 +567,7 @@ form ul {
 	padding-top: 32px;
 	padding-bottom: 32px;
 	width: 78px;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
 }

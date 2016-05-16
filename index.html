@@ -82,7 +82,7 @@
 					<h2 class="content_title map_title">Заинтересовались?</h2>
 					<p class="content_text map_text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 					<form class="form_search_hotels clearfix"> <!-- pop up дата заезда --> 
-						<div class="content_title form_title clearfix">Поиск гостиницы в Седоне</div>
+						<div class="content_title form_title clearfix"><a class="link_popup" href="#">Поиск гостиницы в Седоне</a></div>
 						<div class="form_params">
 							<label for="in" class="field_title_in">Дата заезда: <input class="field_date_in" id="in" placeholder="   24 Апреля 2016" type="text"></label>
 							<label for="out" class="field_title_out">Дата выезда: <input class="field_date_out" id="out" placeholder="ДД.ММ.ГГГГ" type="text"></label>
@@ -112,5 +112,23 @@
 				</div>
 			</footer>
 		</div>
+		<script>
+		var link = document.querySelector(".link_popup");
+		var popup = document.querySelector(".form_params");
+		
+
+		link.addEventListener("click", function(event) {
+			var close = document.querySelector(".link_popup");
+			event.preventDefault();
+			popup.classList.add("form_params_show");
+		});
+
+		close.addEventListener("click", function(event) {
+		event.preventDefault();
+		close.classList.remove("form_params_show");
+		});
+
+		</script>
+
 </body>
 </html>
