@@ -467,6 +467,33 @@ footer {
 	color: #c2c2c2;
 }
 
+.adults_minus {
+	position:absolute;
+	top: 196px;
+	left: 116px;
+	color: #c2c2c2;
+}
+.adults_plus {
+	position:absolute;
+	top: 196px;
+	left: 197px;
+	color: #c2c2c2;
+}
+
+.children_minus {
+	position:absolute;
+	top: 196px;
+	right: 93px;
+	color: #c2c2c2;
+}
+
+.children_plus {
+	position:absolute;
+	top: 196px;
+	right: 18px;
+	color: #c2c2c2;
+}
+
 .map {
 	width: auto;
 	height: 472px;
