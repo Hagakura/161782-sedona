@@ -454,6 +454,19 @@ footer {
 	margin-bottom: 56px;
 }
 
+.calendar_in {
+	position: absolute;
+	top: 60px;
+	right: 18px;
+	color: #c2c2c2;
+}
+.calendar_out {
+	position: absolute;
+	top: 129px;
+	right: 18px;
+	color: #c2c2c2;
+}
+
 .map {
 	width: auto;
 	height: 472px;
