@@ -4,10 +4,10 @@ html, body {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 21px;
-	font-family: "PT sans", Arial,sans-serif;
 	background-color: #f2f2f2;
 	color: #000000;
 	text-transform: uppercase;
+	font-family: "PT sans", Arial,sans-serif;
 }
 @font-face {
 	font-weight: normal;
@@ -26,13 +26,13 @@ html, body {
 
 	speak: none;
 	text-decoration: inherit;
-	width: 1em;
 	font-style: normal;
 	font-variant: normal;
 	font-family: "symbols-sedona";
 	text-align: center;
 	text-transform: none;
 	line-height: 24px;
+	width: 1em;
 }
 
 .icon-facebook::before { content: "\66"; } /* "f" */
@@ -77,16 +77,17 @@ html, body {
 .content_block .content_title {
 	font-weight: bold;
 	font-size: 21px;
-	padding-top: 60px;
 	color: #000000;
 	line-height: 26px;
+	margin-bottom: 30px;
+	padding-top: 60px;
 }
 
 .features_text .content_title {
-	line-height: 21px;
-	color: inherit;
-	padding-top: 55px;
 	margin-bottom: 25px;
+	padding-top: 55px;
+	color: inherit;
+	line-height: 21px;
 }
 
 .features_text.other_color{
@@ -98,12 +99,16 @@ html, body {
 	background-color: #eeeeee;
 }
 
+.content_title.other_params {
+	padding-top: 48px;
+	margin-bottom: 23px;
+}
 .container {
 	width: 1200px;
 	margin: 0px auto;
-	padding: 0 0;
 	background-color: white;
-	box-shadow: 0 0 5px 0 #34495e
+	box-shadow: 0 0 10px 0 #34495e;
+	padding: 0 0;
 }
 
 /*главное меню*/
@@ -116,11 +121,12 @@ html, body {
 }
 
 .logo {
-	margin-top: -15px;
 	position: absolute;
 	display: block;
 	padding-left: 55px;
 	padding-right: 0px;
+	top: 0;
+	left: 475px;
 }
 
 .main_navigation li {
@@ -128,16 +134,18 @@ html, body {
 	padding-top: 14px;
 	padding-bottom: 17px;
 	padding-right: 0px;
-	text-align: center;
 	min-width: 240px;
+	text-align: center;
 }
 
 .main_navigation li:last-child {
 	float: right;
+	margin-right: 6px;
 }
 
 .main_navigation li:nth-child(4) {
 	float: right;
+	margin-right: -8px;
 }
 
 .main_navigation a {
@@ -158,10 +166,10 @@ html, body {
 }
 
 .intro {
-	height: 507px;
 	background-image: url("../img/intro.jpg");
-	background-position: -2px 95%;
+	background-position: 0px 95%;
 	background-repeat: no-repeat;
+	height: 507px;
 }
 
 .content_block {
@@ -169,8 +177,8 @@ html, body {
 }
 
 .content_title {
-	padding-bottom: 20px;
 	color: #FFF;
+	padding-bottom: 20px;
 	padding-top: 50px; 
 }
 
@@ -190,7 +198,7 @@ html, body {
 .content_block p {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 16px;
+	margin-bottom: 20px;
 }
 
 .features_picture {
@@ -208,8 +216,8 @@ html, body {
 }
 
 .content_about .title_about {
-	padding-top: 165px;
-	margin-bottom: 27px;
+	padding-top: 163px;
+	margin-bottom: 23px;
 	font-size: 21px;
 }
 
@@ -219,7 +227,7 @@ html, body {
 }
 
 .content_about p {
-	margin-bottom: 80px;
+	margin-bottom: 82px;
 	padding-top: 0px;
 }
 
@@ -272,8 +280,8 @@ footer {
 .tag {
 	float:left;
 	padding-bottom: 40px;
-	padding-top:50px;
-	padding-left: 61px;
+	padding-top:46px;
+	padding-left: 62px;
 	margin-left:70px;
 	width:240px;
 	font-size:21px;
@@ -283,10 +291,10 @@ footer {
 .footer_social {
 	float: left;
 	width: 400px;
-	margin-left: 26px;
-	padding-top: 38px;
-	padding-bottom: 36px;
+	margin-left: 27px;
 	text-align: center;
+	padding-bottom: 36px;
+	padding-top: 36px;
 }
 
 .social_btn {
@@ -308,16 +316,16 @@ footer {
 	float:right;
 	width: 240px;
 	margin-right: 58px;
-	padding-top: 52px;
+	padding-top: 48px;
 	padding-bottom: 40px;
 }
 
 .icon_htmlacademy {
 	display:block;
 	width: 113px;
-	height: 39px;
+	height: 40px;
 	position: absolute;
-	top: 44px;
+	top: 40px;
 	left: 82px;
 	background-image: url(../img/co_academy.png);
 	background-repeat: no-repeat;
@@ -331,37 +339,39 @@ footer {
 	position: relative;
 }
 
-.content_block .map_title {
+.content_title.map_title {
 	font-size: 30px;
 	font-weight: bold;
 	line-height: 24px;
-	margin-bottom: 28px;
+	margin-bottom: 30px;
+	padding-top: 55px;
 }
 
 .content_block .map_text {
 	font-size: 14px;
-	line-height: 26px;
+	line-height: 24px;
 	font-weight: 400;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 130px;
+	margin-bottom: 133px;
 }
 
 .form_search_hotels {
 	position: absolute;
 	width: 570px;
-	left: 316px;
+	left: 315px;
 	background-color: white;
-	top: 207px;
+	top: 205px;;
 }
 
 .form_search_hotels .form_title {
 	background-color: #766357;
-	color: white;
-	display: block;
 	text-decoration: none;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	display: block;
+	color: white;
+	margin-bottom: 0;
 }
 .form_title a {
 	padding: 0;
@@ -391,31 +401,35 @@ footer {
 }
 
 .form_params input {
-	width: 115px;
-	background-color: #f2f2f2;
-	height: 30px;
-	margin-left: 33px;
 	border: none;
+	padding-left: 15px;
+	background-color: #f2f2f2;
+	text-transform: inherit;
+	font-weight: inherit;
+	width: 100px;
+	height: 40px;
 }
 
 .form_search_hotels .field_date_in {
-	width: 342px;
-	height: 33px;
-	margin-left: 16px;
+	width: 329px;
+	height: 38px;
+	margin-left: 21px;
+	padding-top: 0;;;
 
 }
 .form_search_hotels .field_date_out {
-	width: 342px;
-	height: 32px;
-	margin-left: 16px;
+	width: 329px;
+	height: 36px;
+	margin-left: 18px;
 	background-color: #f2f2f2;
+	padding-left: 0px;
+	padding-right: 13px;;
 }
 
 .field_title_in {
-	margin-bottom: 32px;
-	float: left;
-	margin-left: 1px;
-	margin-top: 56px;
+	margin-bottom: 28px;
+	margin-left: 4px;
+	margin-top: 54px;
 }
 
 .field_title_out {
@@ -423,8 +437,8 @@ footer {
 	font-weight: bold;
 	line-height: 26px;
 	float: left;
-	margin-left: -3px;
-	margin-bottom: 35px;
+	margin-left: 2px;
+	margin-bottom: 29px;
 }
 
 .field_title_adults {
@@ -439,62 +453,65 @@ footer {
 
 .form_params .btn_search {
 	margin-top: 52px;
-	width: 459px;
-	margin-left: 0px;
-	height: 61px;
+	width: 458px;
+	height: 59px;
 	font-size: 21px;
-	font-weight: bold;
 	line-height: 26px;
-	color: #FFFFFF;
-	background-color: #81b3d2;
-	text-transform: uppercase;
-	font-family: "PT sans", Arial,sans-serif;
 	margin-bottom: 56px;
+	font-family: "PT sans", Arial,sans-serif;
+	text-transform: uppercase;
+	background-color: #81b3d2;
+	padding-right: 5px;
+	color: #FFFFFF;
+	padding-left: 5px;
+	margin-left: 0;;
 }
 .map {
 	width: auto;
-	height: 472px;
+	height: 474px;
 	background-image: url(../img/sedona_map.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
 .calendar_in {
 	position: absolute;
-	top: 60px;
-	right: 18px;
+	top: 63px;
+	right: 9px;
 	color: #c2c2c2;
+	font-size: 19px;
 }
 .calendar_out {
 	position: absolute;
-	top: 129px;
-	right: 18px;
+	top: 130px;
+	right: 9px;
 	color: #c2c2c2;
+	font-size: 19px;;
 }
 
 .adults_minus {
 	position:absolute;
-	top: 196px;
-	left: 116px;
+	top: 198px;
+	left: 125px;
 	color: #c2c2c2;
 }
 .adults_plus {
 	position:absolute;
-	top: 196px;
-	left: 197px;
+	top: 198px;
+	left: 200px;
 	color: #c2c2c2;
 }
 
 .children_minus {
 	position:absolute;
-	top: 196px;
-	right: 93px;
+	top: 198px;
+	right: 87px;
 	color: #c2c2c2;
 }
 
 .children_plus {
 	position:absolute;
-	top: 196px;
-	right: 18px;
+	top: 198px;
+	right: 11px;
 	color: #c2c2c2;
 }
 
@@ -510,13 +527,13 @@ footer {
 form.filters {
 	padding:0;
 	margin:0;
-	min-height:218px;
 	background-image: url(../img/form_background.jpg);
 	background-repeat:no-repeat;
 	background-position: 0 17%;
 	font-size:16px;
 	font-weight:400;
 	font-family:"PT sans", Arial,sans-serif;
+	min-height:218px;
 }
 form ul {
 	margin:0;
@@ -531,7 +548,7 @@ form ul {
 	padding: 0;
 	color: #FFFFFF;
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 
 .filters li {
@@ -572,13 +589,13 @@ form ul {
 	list-style: none;
 	margin: 0px;
 	padding: 0px;
-	padding-top: 30px;
+	padding-top: 32px;
 	padding-bottom: 30px;
 }
 
 .sort_panel li {
 	display: inline-block;
-	padding-left: 30px;
+	padding-left: 32px;
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: 400;;;;;
@@ -596,7 +613,7 @@ form ul {
 .found_results {
 	float: left;
 	margin-left: 70px;
-	padding-top: 29px;
+	padding-top: 28px;
 	padding-right: 54px;
 	font-size: 21px;
 	font-weight: bold;
@@ -607,12 +624,13 @@ form ul {
 
 .sort_label {
 	float: left;
-	padding-top: 32px;
+	padding-top: 34px;
 	padding-bottom: 32px;
 	width: 78px;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 18px;
 	font-weight: 400;
+	margin-right: 1px;
 }
 
 .sort_params {
@@ -670,11 +688,11 @@ form ul {
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
-	padding-top: 25px;
-	padding-left:1px;
+	padding-top: 26px;
 	margin-right: 76px;
-	margin-bottom: 5px;
-	min-width: 250px;;
+	margin-bottom: 6px;
+	min-width: 250px;
+	padding-left: 2px;;
 }
 
 .hotel_type {
@@ -734,11 +752,11 @@ input[type="checkbox"] {
 
 input[type="checkbox"]+label {
 	display: block;
-	padding-left: 45px;
-	line-height: 20px;
+	padding-left: 40px;
+	line-height: 21px;
 	position: relative;
 	cursor: pointer;
-	margin-bottom: 25px;
+	margin-bottom: 26px;
 }
 
 input[type="checkbox"] + label::before {
@@ -758,140 +776,147 @@ input[type="checkbox"]:checked + label::before {
 
 /*Форма цены*/
 .filter-range {
-	width: 316px;
-	text-transform: uppercase;
-	margin-right: 74px;
-	margin-top: 27px;
-	color: #ffffff;
-	float: right;
+  width: 315px;
+  
+  color: #ffffff;
+  text-transform: uppercase;
+  float: right;
+  margin-right: 74px;
+  margin-top: 26px;;;;
 }
 
 .filter-range-title {
-	margin-bottom: 9px;
+  margin-bottom: 10px;
 
-	font-weight: 600;
-	font-size: 16px;
-	line-height: 21px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  margin-left: -9px;
 }
 
 .price-controls {
-	position: relative;
-	height: 36px;
-	margin-bottom: 17px;
+  position: relative;
 
-	font-size: 0;
-
-	border: 2px solid #ffffff;
-	border-radius: 2px;
+  font-size: 0;
+  border-radius: 2px;
+  border: 2px solid #ffffff;
+  margin-bottom: 20px;
+  height: 32px;
 }
 
 .price-controls::after {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 50%;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
-	width: 2px;
-	height: 22px;
+  width: 2px;
+  height: 22px;
 
-	background: #ffffff;
-	transform: translate(-50%, -50%);
+  background: #ffffff;
+  transform: translate(-50%, -50%);
 }
 
 .price-controls label {
-	display: inline-block;
+  display: inline-block;
 
-	font-size: 14px;
-
-	cursor: pointer;
-	vertical-align: top;
-	line-height: 38px;
+  font-size: 14px;
+  line-height: 32px;
+  vertical-align: top;
+  cursor: pointer;
 }
 
-.price-controls .min-price,
+.price-controls .min-price {
+  width: 80px;
+  padding: 0;
+  padding-left: 65px;
+}
 .price-controls .max-price {
-	width: 90px;
-	padding-left: 65px;
+  width: 80px;
+  padding: 0;
+  padding-left: 65px;
 }
 
 .price-controls input {
-
-	background: none;
-	border: none;
-	outline: none;
-	font: inherit;
-	color: inherit;
-	margin: 0;
-
-	width: 50px;
+  outline: none;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  width: 50px;
 }
 
 .range-controls {
-	position: relative;
+  position: relative;
 
-	margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .range-controls .scale {
-	height: 2px;
-	background: rgba(255, 255, 255, 0.3);
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
-	width: 75%;
-	height: 2px;
+  width: 80%;
+  height: 2px;
 
-	background: #ffffff;
+  background: #ffffff;
 }
 
 .range-toggle {
-	position: absolute;
+  position: absolute;
+  top: -9px;
 
-	width: 4px;
-	height: 4px;
+  width: 4px;
+  height: 4px;
 
-	background: #ababab;
-	border: 8px solid #ffffff;
-	border-radius: 50%;
-	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-	cursor: pointer;
-	top: -9px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
 }
 
 .range-toggle:hover {
-	background: #1c4f80;
+  background: #1c4f80;
 }
 
 .range-toggle-min {
-	left: 0px;
+  left: 0;
 }
 
 .range-toggle-max {
-	left: 80%;
+  left: 80%;
 }
 
 .btn-transparent {
-	display: block;
-	margin: 0 auto;
-	padding: 6px 32px;
+  display: block;
+  padding: 6px 30px;
 
-	font-size: 14px;
-	line-height: 20px;
-	color: #ffffff;
-	text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
 
-	background: transparent;
-	border: 2px solid #ffffff;
-	border-radius: 2px;
-	outline: none;
-	cursor: pointer;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  margin: 0 auto;
+
+  margin-right: 95px;
 }
 
 .btn-transparent:hover {
-	color: #000000;
+  color: #000000;
 
-	background: #ffffff;
+  background: #ffffff;
 }
+
 @-webkit-keyframes bounce { 
 0% { 
 -webkit-transform: translateX(-2000px); 
